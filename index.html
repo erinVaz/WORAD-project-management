@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WORAD Project Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="titles">
+      <div class="eyebrow" id="subtitle">ES410 Group Project</div>
+      <h1 id="title">WORAD Project Plan</h1>
+    </div>
+    <div class="theme">
+      <label for="themeSel" class="eyebrow">Theme</label>
+      <select id="themeSel"><option value="">System</option><option value="light">Light</option><option value="dark">Dark</option></select>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <nav class="tabs" role="tablist" aria-label="Views">
+    <button role="tab" data-tab="gantt">Gantt</button>
+    <button role="tab" data-tab="tasks">Tasks</button>
+    <button role="tab" data-tab="roles">Roles</button>
+    <button role="tab" data-tab="milestones">Milestones</button>
+    <button role="tab" data-tab="settings">Settings</button>
+    <button role="tab" data-tab="export">Save &amp; export</button>
+  </nav>
+
+  <main id="view" aria-live="polite"></main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
